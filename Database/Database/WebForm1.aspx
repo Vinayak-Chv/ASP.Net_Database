@@ -4,72 +4,58 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 297px;
-        }
-        .auto-style2 {
-            width: 297px;
-            height: 33px;
-        }
-        .auto-style3 {
-            height: 33px;
-            width: 760px;
-        }
-        .auto-style4 {
-            width: 760px;
-        }
-    </style>
+    <title>ADO.Net Database Project</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-
-            <table style="width:100%;">
+        <div class="container">
+            <h1>Database Project</h1>
+            <table>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label1" runat="server" Text="Account ID :"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text="Account ID :" CssClass="labels"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox1" runat="server" TextMode="Number"></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" TextMode="Number" CssClass="inputs"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label2" runat="server" Text="Name :"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text="Name :" CssClass="labels"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox2" runat="server" CssClass="inputs"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label3" runat="server" Text="Age :"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="Age :" CssClass="labels"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox3" runat="server" TextMode="Number"></asp:TextBox>
+                        <asp:TextBox ID="TextBox3" runat="server" TextMode="Number" CssClass="inputs"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label4" runat="server" Text="Address :"></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text="Address :" CssClass="labels"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox4" runat="server" CssClass="inputs"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label5" runat="server" Text="Email ID :"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Email ID :" CssClass="labels"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox5" runat="server" TextMode="Email"></asp:TextBox>
+                        <asp:TextBox ID="TextBox5" runat="server" TextMode="Email" CssClass="inputs"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label6" runat="server" Text="Account Type : "></asp:Label>
+                        <asp:Label ID="Label6" runat="server" Text="Account Type : " CssClass="labels"></asp:Label>
                     </td>
                     <td class="auto-style4">
                         <asp:DropDownList ID="DropDownList1" runat="server">
@@ -80,33 +66,33 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Label ID="Label7" runat="server" Text="Contact No :"></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Text="Contact No :" CssClass="labels"></asp:Label>
                     </td>
                     <td class="auto-style3">
-                        <asp:TextBox ID="TextBox6" runat="server" TextMode="Phone"></asp:TextBox>
+                        <asp:TextBox ID="TextBox6" runat="server" TextMode="Phone" CssClass="inputs"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
+                        <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" CssClass="btns" />
                     </td>
                     <td class="auto-style4">
-                        <asp:Button ID="Button2" runat="server" Text="Update" OnClick="Button2_Click" />
+                        <asp:Button ID="Button2" runat="server" Text="Update" OnClick="Button2_Click" CssClass="btns" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Button ID="Button3" runat="server" Text="Delete" OnClick="Button3_Click" />
+                        <asp:Button ID="Button3" runat="server" Text="Delete" OnClick="Button3_Click" CssClass="btns" />
                     </td>
                     <td class="auto-style4">
-                        <asp:Button ID="Button4" runat="server" Text="Display" OnClick="Button4_Click" />
+                        <asp:Button ID="Button4" runat="server" Text="Display" OnClick="Button4_Click" CssClass="btns" />
                     </td>
                 </tr>
             </table>
 
 
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Account_Id" DataSourceID="SqlDataSource1">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Account_Id" DataSourceID="SqlDataSource1" CssClass="gv1">
                 <Columns>
                     <asp:BoundField DataField="Account_Id" HeaderText="Account_Id" ReadOnly="True" SortExpression="Account_Id" />
                     <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />

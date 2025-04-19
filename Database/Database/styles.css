@@ -1,0 +1,110 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #512da8;
+}
+
+.container {
+    background-color: #f3e5f5;
+    margin: 2rem auto;
+    border-radius: 0.8rem;
+    padding: 2rem 3rem;
+    max-width: 56.2rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.25);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+td {
+    padding: 0.5rem;
+    vertical-align: middle;
+}
+
+table .auto-style1,
+table .auto-style4{ 
+    width: 65%;
+}
+
+
+h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #3e1f68;
+    font-size: 2rem;
+}
+
+/*Label Styling*/
+.labels {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #311b92;
+    display: block;
+    margin-left: 0.5rem;
+}
+
+/*TextBox Styling*/
+.inputs {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.inputs:focus {
+    outline: none;
+    border-color: #7b1fa2;
+    box-shadow: 0, 0, 0, 2px, #eb1ee7;
+}
+
+/*Buttons Styling*/
+.btns {
+    padding: 0.6rem 1.5rem;
+    background: linear-gradient(to right, #7b1fa2, #ab47bc);
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btns:hover {
+    background: linear-gradient(to right, #6a1b9a, #9c27b0);
+}
+
+/*GridView Styling*/
+.gv1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: white;
+}
+
+.gv1 th,
+.gv1 td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.gv1 th {
+    background-color: #e1bee7;
+    color: #4a148c;
+}
+
+.gv1 tr:nth-child(even) {
+    background-color: #f3e5f5;
+}
+
